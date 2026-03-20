@@ -2,9 +2,24 @@
 @import "../base/mixins";
 
 .hero {
-    margin-top: var(--header-height);
     min-height: calc(100vh - var(--header-height));
     padding-block: 0;
+
+    @include respond-to(sm) {
+        min-height: calc(100vh - var(--is-sticky));
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        transform: translateY(0px);
+        transition: transform 0.5s ease-out;
+        aspect-ratio: 1.75;
+        height: calc(100vh - var(--header-height));
+
+        @include respond-to(sm) {
+            height: calc(100vh - var(--is-sticky));
+        }
+    }
 }
 
 .hero h2 {
@@ -26,14 +41,6 @@
 
 .hero-overlay {
     z-index: 1;
-}
-
-.hero .carousel-item img {
-    object-fit: cover;
-    transform: translateY(0px);
-    transition: transform 0.5s ease-out;
-    aspect-ratio: 1.75;
-    height: calc(100vh - var(--header-height));
 }
 
 .info-col {

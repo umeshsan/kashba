@@ -27,13 +27,24 @@
         aspect-ratio: 1;
         object-position: top;
         transition: all ease 0.5s;
+
+        @include respond-to(sm) {
+            max-height: 60px;
+            max-width: 60px;
+            top: -1rem;
+        }
     }
 
     span {
-        padding-left: 120px;
+        padding-left: 115px;
         font-size: 32px;
         text-transform: uppercase;
         transition: all ease 0.5s;
+
+        @include respond-to(sm) {
+            padding-left: 55px;
+            font-size: 24px;
+        }
     }
 }
 
@@ -41,6 +52,10 @@
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     min-height: var(--header-height);
+
+    @include respond-to(sm) {
+        min-height: var(--is-sticky);
+    }
 
     &.is-sticky {
         min-height: var(--is-sticky);
@@ -65,15 +80,23 @@
 
     a {
         padding-block: 2.4rem;
-        padding-inline: 16px !important;
+        padding-inline: 12px !important;
         font-size: 15px;
         color: $dark;
         transition: all ease 0.5s;
+
+        @include respond-to(sm) {
+            padding-block: 1.2rem;
+        }
 
         &:hover,
         &.active {
             color: $gold;
         }
+    }
+
+    .highlight {
+        padding-left: 0 !important;
     }
 }
 

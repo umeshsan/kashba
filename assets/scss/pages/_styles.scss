@@ -100,7 +100,7 @@ body {
 
 /* PARALLAX */
 .parallax {
-    background: url('../../img/parallax.jpg') center/cover fixed;
+    background: url('../img/parallax.jpg') center/cover fixed;
     height: 560px;
     display: flex;
     align-items: center;
@@ -110,6 +110,10 @@ body {
 
 main {
     margin-top: var(--header-height);
+
+    @include respond-to(sm) {
+        margin-top: var(--is-sticky);
+    }
 }
 
 section {
@@ -119,7 +123,7 @@ section {
 /* Menu hero Banner */
 .menu-hero {
     height: 420px;
-    background: url('../../img/parallax.jpg') center/cover no-repeat;
+    background: url('../img/parallax.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +179,7 @@ section {
 
 .film-video-clips-page {
     .menu-hero {
-        background: url(../../img/movies/mani_rimdu.jpg) 50% / cover no-repeat;
+        background: url(../img/movies/mani_rimdu.jpg) 50% / cover no-repeat;
     }
 
     figure {
