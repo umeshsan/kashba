@@ -1,11 +1,14 @@
-baseURL = "https://umeshsan.github.io/kashba/"
+baseURL = "/"
 title = 'Kashba'
+
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
+
 enableInlineShortcodes = true
 disableFastRender = false
+
 relativeURLs = true
-canonifyURLs = true
+canonifyURLs = false
 
 [params]
   siteName = "Kashba"

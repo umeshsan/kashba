@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Movies on Kashba</title>
-    <link>https://umeshsan.github.io/kashba/movies/</link>
+    <link>/movies/</link>
     <description>Recent content in Movies on Kashba</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://umeshsan.github.io/kashba/movies/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/movies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Film Video Clips</title>
-      <link>https://umeshsan.github.io/kashba/movies/film-video-clips/</link>
+      <link>/movies/film-video-clips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://umeshsan.github.io/kashba/movies/film-video-clips/</guid>
+      <guid>/movies/film-video-clips/</guid>
       <description></description>
     </item>
   </channel>
