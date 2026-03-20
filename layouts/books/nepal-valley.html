@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<section class="menu-hero">
+    <div class="container" data-aos="fade-up">
+        <h1>{{ i18n "NepalValley" | safeHTML }}</h1>
+        <p>A remarkable project</p>
+    </div>
+</section>
+<nav class="breadcrumb-nav" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" data-aos="fade-right">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">{{ i18n "Books" }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ i18n "NepalValleyBreadcrumb" }}</li>
+        </ol>
+    </div>
+</nav>
+
+<section>
+    <div class="container">
+        <div class="images-group">
+            <figure data-aos="fade-up">
+                <img src="{{ "/img/books/brochure-1.jpg" | relURL }}">
+            </figure>
+            <div class="d-flex justify-content-center gap-5">
+                <figure data-aos="fade-right">
+                    <img src="{{ "/img/books/brochure-2.jpg" | relURL }}">
+                </figure>
+                <figure data-aos="fade-left">
+                    <img src="{{ "/img/books/brochure-3.jpg" | relURL }}">
+                </figure>
+            </div>
+            <figure data-aos="zoom-in-up">
+                <img src="{{ "/img/books/brochure-4.jpg" | relURL }}">
+            </figure>
+            <figure data-aos="zoom-in-up">
+                <img src="{{ "/img/books/brochure-5.jpg" | relURL }}">
+            </figure>
+
+            <div class="video-wrapper justify-content-center align-items-center mx-auto" data-aos="fade-up">
+                <a href="{{ "https://www.kashba.nl/blog-/blog-nederlands/ewExternalFiles/IMG_1107.mov" | relURL }}" class="card mb-4 flex-row align-items-center" data-fancybox="gallery" data-caption="Books | Nepalese Valley">
+                    <figure class="ratio ratio-16x9 overflow-hidden mb-0">
+                        <img class="object-fit-cover" src="{{ "/img/books/video.jpg" | relURL }}">
+                        <i class="bi bi-play-circle"></i>
+                    </figure>
+                </a>
+                <p>Click on.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

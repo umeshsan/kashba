@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://umeshsan.github.io/kashba/"
 title = 'Kashba'
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
