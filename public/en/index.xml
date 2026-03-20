@@ -2,177 +2,177 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kashba</title>
-    <link>http://localhost:1313/kashba/en/</link>
+    <link>//localhost:1313/en/</link>
     <description>Recent content on Kashba</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/kashba/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Avalokiteshvara Chinrezig</title>
-      <link>http://localhost:1313/kashba/en/store/avalokiteshvara-chinrezig/</link>
+      <link>//localhost:1313/en/store/avalokiteshvara-chinrezig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/avalokiteshvara-chinrezig/</guid>
+      <guid>//localhost:1313/en/store/avalokiteshvara-chinrezig/</guid>
       <description></description>
     </item>
     <item>
       <title>Bracelets</title>
-      <link>http://localhost:1313/kashba/en/store/bracelets-silver/</link>
+      <link>//localhost:1313/en/store/bracelets-silver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/bracelets-silver/</guid>
+      <guid>//localhost:1313/en/store/bracelets-silver/</guid>
       <description></description>
     </item>
     <item>
       <title>Buddhist Statues Beelden</title>
-      <link>http://localhost:1313/kashba/en/store/statues/</link>
+      <link>//localhost:1313/en/store/statues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/statues/</guid>
+      <guid>//localhost:1313/en/store/statues/</guid>
       <description></description>
     </item>
     <item>
       <title>Buddhist Thankas Scrolls</title>
-      <link>http://localhost:1313/kashba/en/store/buddhist-thankas-scrolls/</link>
+      <link>//localhost:1313/en/store/buddhist-thankas-scrolls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/buddhist-thankas-scrolls/</guid>
+      <guid>//localhost:1313/en/store/buddhist-thankas-scrolls/</guid>
       <description></description>
     </item>
     <item>
       <title>Chinese Porcelain /Brushes / Bronzes</title>
-      <link>http://localhost:1313/kashba/en/store/chinese-porcelainbrushesbronzes/</link>
+      <link>//localhost:1313/en/store/chinese-porcelainbrushesbronzes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/chinese-porcelainbrushesbronzes/</guid>
+      <guid>//localhost:1313/en/store/chinese-porcelainbrushesbronzes/</guid>
       <description></description>
     </item>
     <item>
       <title>Earrings Rings and Beads</title>
-      <link>http://localhost:1313/kashba/en/store/earrings-rings-beads/</link>
+      <link>//localhost:1313/en/store/earrings-rings-beads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/earrings-rings-beads/</guid>
+      <guid>//localhost:1313/en/store/earrings-rings-beads/</guid>
       <description></description>
     </item>
     <item>
       <title>Eight Guru Rinpoche</title>
-      <link>http://localhost:1313/kashba/en/store/eight-guru-rinpoche/</link>
+      <link>//localhost:1313/en/store/eight-guru-rinpoche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/eight-guru-rinpoche/</guid>
+      <guid>//localhost:1313/en/store/eight-guru-rinpoche/</guid>
       <description></description>
     </item>
     <item>
       <title>Film Video Clips</title>
-      <link>http://localhost:1313/kashba/en/movies/film-video-clips/</link>
+      <link>//localhost:1313/en/movies/film-video-clips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/movies/film-video-clips/</guid>
+      <guid>//localhost:1313/en/movies/film-video-clips/</guid>
       <description></description>
     </item>
     <item>
       <title>Hindu Statues</title>
-      <link>http://localhost:1313/kashba/en/store/hindue-statues-beelden/</link>
+      <link>//localhost:1313/en/store/hindue-statues-beelden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/hindue-statues-beelden/</guid>
+      <guid>//localhost:1313/en/store/hindue-statues-beelden/</guid>
       <description></description>
     </item>
     <item>
       <title>Kashba Shop Interior</title>
-      <link>http://localhost:1313/kashba/en/store/kashba-shop-interior/</link>
+      <link>//localhost:1313/en/store/kashba-shop-interior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/kashba-shop-interior/</guid>
+      <guid>//localhost:1313/en/store/kashba-shop-interior/</guid>
       <description></description>
     </item>
     <item>
       <title>Masks</title>
-      <link>http://localhost:1313/kashba/en/store/masks/</link>
+      <link>//localhost:1313/en/store/masks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/masks/</guid>
+      <guid>//localhost:1313/en/store/masks/</guid>
       <description></description>
     </item>
     <item>
       <title>Miscellaneous</title>
-      <link>http://localhost:1313/kashba/en/store/miscellaneous/</link>
+      <link>//localhost:1313/en/store/miscellaneous/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/miscellaneous/</guid>
+      <guid>//localhost:1313/en/store/miscellaneous/</guid>
       <description></description>
     </item>
     <item>
       <title>Musical Instruments</title>
-      <link>http://localhost:1313/kashba/en/store/musical-instruments/</link>
+      <link>//localhost:1313/en/store/musical-instruments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/musical-instruments/</guid>
+      <guid>//localhost:1313/en/store/musical-instruments/</guid>
       <description></description>
     </item>
     <item>
       <title>Necklaces</title>
-      <link>http://localhost:1313/kashba/en/store/necklaces/</link>
+      <link>//localhost:1313/en/store/necklaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/necklaces/</guid>
+      <guid>//localhost:1313/en/store/necklaces/</guid>
       <description></description>
     </item>
     <item>
       <title>Nepal Valley</title>
-      <link>http://localhost:1313/kashba/en/books/nepal-valley/</link>
+      <link>//localhost:1313/en/books/nepal-valley/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/books/nepal-valley/</guid>
+      <guid>//localhost:1313/en/books/nepal-valley/</guid>
       <description></description>
     </item>
     <item>
       <title>Ornamental Jewelry</title>
-      <link>http://localhost:1313/kashba/en/store/ornamental-jewelry/</link>
+      <link>//localhost:1313/en/store/ornamental-jewelry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/ornamental-jewelry/</guid>
+      <guid>//localhost:1313/en/store/ornamental-jewelry/</guid>
       <description></description>
     </item>
     <item>
       <title>Ornaments</title>
-      <link>http://localhost:1313/kashba/en/store/ornaments/</link>
+      <link>//localhost:1313/en/store/ornaments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/ornaments/</guid>
+      <guid>//localhost:1313/en/store/ornaments/</guid>
       <description></description>
     </item>
     <item>
       <title>Pendants Hanger</title>
-      <link>http://localhost:1313/kashba/en/store/pendants-hangers/</link>
+      <link>//localhost:1313/en/store/pendants-hangers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/pendants-hangers/</guid>
+      <guid>//localhost:1313/en/store/pendants-hangers/</guid>
       <description></description>
     </item>
     <item>
       <title>RitualObjects</title>
-      <link>http://localhost:1313/kashba/en/store/ritual-objects/</link>
+      <link>//localhost:1313/en/store/ritual-objects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/ritual-objects/</guid>
+      <guid>//localhost:1313/en/store/ritual-objects/</guid>
       <description></description>
     </item>
     <item>
       <title>Shamanistic Naga</title>
-      <link>http://localhost:1313/kashba/en/store/shamanisticnagaetc/</link>
+      <link>//localhost:1313/en/store/shamanisticnagaetc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/shamanisticnagaetc/</guid>
+      <guid>//localhost:1313/en/store/shamanisticnagaetc/</guid>
       <description></description>
     </item>
     <item>
       <title>The Lockdown Blues</title>
-      <link>http://localhost:1313/kashba/en/store/the-lockdown-blues/</link>
+      <link>//localhost:1313/en/store/the-lockdown-blues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/the-lockdown-blues/</guid>
+      <guid>//localhost:1313/en/store/the-lockdown-blues/</guid>
       <description></description>
     </item>
     <item>
       <title>Tibetan Panels Chinese Furniture</title>
-      <link>http://localhost:1313/kashba/en/store/tibetan-panels-chinese-furniture/</link>
+      <link>//localhost:1313/en/store/tibetan-panels-chinese-furniture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/tibetan-panels-chinese-furniture/</guid>
+      <guid>//localhost:1313/en/store/tibetan-panels-chinese-furniture/</guid>
       <description></description>
     </item>
     <item>
       <title>Vajrapani</title>
-      <link>http://localhost:1313/kashba/en/store/vajrapani/</link>
+      <link>//localhost:1313/en/store/vajrapani/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/vajrapani/</guid>
+      <guid>//localhost:1313/en/store/vajrapani/</guid>
       <description></description>
     </item>
     <item>
       <title>WrathfulGods</title>
-      <link>http://localhost:1313/kashba/en/store/wrathful-gods--toornige-goden/</link>
+      <link>//localhost:1313/en/store/wrathful-gods--toornige-goden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kashba/en/store/wrathful-gods--toornige-goden/</guid>
+      <guid>//localhost:1313/en/store/wrathful-gods--toornige-goden/</guid>
       <description></description>
     </item>
   </channel>
