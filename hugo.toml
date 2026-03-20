@@ -4,7 +4,7 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 enableInlineShortcodes = true
 disableFastRender = false
-relativeURLs = false
+relativeURLs = true
 canonifyURLs = true
 
 [params]
