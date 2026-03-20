@@ -1,0 +1,491 @@
+<a class="sticky-book" href="{{ "/books/nepal-valley/" | relLangURL }}">
+    <img src="{{ "/img/books/book-icon.jpg" | relURL }}" alt="{{ .Site.Params.siteName }}">
+</a>
+
+<header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl fixed-top shadow py-0">
+        <div class="container">
+
+            <!-- BRAND -->
+            <h1 class="mb-0 logo">
+                <a class="navbar-brand fw-bold py-0" href="{{ "/" | relLangURL }}">
+                    <img src="{{ "/img/kashba.jpg" | relURL }}" alt="{{ .Site.Params.siteName }}"> <span>{{ .Site.Params.siteName }}</span>
+                </a>
+            </h1>
+
+            <div class="d-flex align-items-center gap-1 d-block d-xl-none langDropdownSP">
+                <!-- Language Switcher -->
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item dropdown">
+                        {{ $flags := dict
+                        "en" "/img/flag-en.png"
+                        "nl" "/img/flag-nl.png"
+                        }}
+                        <a class="nav-link dropdown-toggle highlight" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{ index $flags .Site.Language.Lang }}" alt="{{ .Site.Language.LanguageName }} flag" height="20">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+                            {{ $current := . }}
+                            {{ range .Site.Languages }}
+                            {{ if ne .Lang $.Site.Language.Lang }}
+                            <li>
+                                {{ $translated := first 1 (where $current.Translations "Lang" .Lang) }}
+                                {{ if gt (len $translated) 0 }}
+                                <a class="dropdown-item" href="{{ (index $translated 0).RelPermalink }}">
+                                    <img src="{{ index $flags .Lang }}" alt="{{ .LanguageName }} flag" height="20" />
+                                    {{ .LanguageName }}
+                                </a>
+                                {{ else }}
+                                <!-- fallback to homepage -->
+                                <a class="dropdown-item" href="{{ .Lang | relLangURL }}">
+                                    <img src="{{ index $flags .Lang }}" alt="{{ .LanguageName }} flag" height="20" />
+                                    {{ .LanguageName }}
+                                </a>
+                                {{ end }}
+                            </li>
+                            {{ end }}
+                            {{ end }}
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- TOGGLER -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Desktop Mega Menu -->
+            <div class="collapse navbar-collapse d-none d-xl-flex" id="desktopMenu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- STORE -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "Store" }}</a>
+
+                        <div class="dropdown-menu w-100 border-0 shadow-lg start-0">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ "/store/kashba-shop-interior/" | relLangURL }}"> {{ i18n "ShopInterior" }} </a></li>
+                                        <li><a href="{{ "/store/necklaces/" | relLangURL }}"> {{ i18n "Necklaces" }} </a></li>
+                                        <li><a href="{{ "/store/the-lockdown-blues/" | relLangURL }}"> {{ i18n "TheLockdownBlues" }} </a></li>
+                                        <li><a href="{{ "/store/earrings-rings-beads/" | relLangURL }}"> {{ i18n "EarringsRingsAndBeads" }} </a></li>
+                                        <li><a href="{{ "/store/pendants-hangers/" | relLangURL }}"> {{ i18n "PendantsHanger" }} </a></li>
+                                        <li><a href="{{ "/store/bracelets-silver/" | relLangURL }}"> {{ i18n "Bracelets" }} </a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-6 col-xl-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ "/store/ornamental-jewelry/" | relLangURL }}"> {{ i18n "OrnamentalJewelry" }} </a></li>
+                                        <li><a href="{{ "/store/statues/" | relLangURL }}"> {{ i18n "BuddhistStatuesBeelden" }} </a></li>
+                                        <li><a href="{{ "/store/buddhist-thankas-scrolls/" | relLangURL }}"> {{ i18n "BuddhistThankasScrolls" }} </a></li>
+                                        <li><a href="{{ "/store/ritual-objects/" | relLangURL }}"> {{ i18n "RitualObjects" }} </a></li>
+                                        <li><a href="{{ "/store/ornaments/" | relLangURL }}"> {{ i18n "Ornaments" }} </a></li>
+                                        <li><a href="{{ "/store/hindue-statues-beelden/" | relLangURL }}"> {{ i18n "HinduStatues" }} </a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-xl-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ "/store/chinese-porcelainbrushesbronzes/" | relLangURL }}"> {{ i18n "ChinesePorcelain" }} </a></li>
+                                        <li><a href="{{ "/store/tibetan-panels-chinese-furniture/" | relLangURL }}"> {{ i18n "TibetanPanelsChineseFurniture" }} </a></li>
+                                        <li><a href="{{ "/store/miscellaneous/" | relLangURL }}"> {{ i18n "Miscellaneous" }} </a></li>
+                                        <li><a href="{{ "/store/shamanisticnagaetc/" | relLangURL }}"> {{ i18n "ShamanisticNaga" }} </a></li>
+                                        <li><a href="{{ "/store/masks/" | relLangURL }}"> {{ i18n "Masks" }} </a></li>
+                                        <li><a href="{{ "/store/musical-instruments/" | relLangURL }}"> {{ i18n "MusicalInstruments" }} </a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-xl-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ "/store/eight-guru-rinpoche/" | relLangURL }}"> {{ i18n "EightGuruRinpoche" }} </a></li>
+                                        <li><a href="{{ "/store/avalokiteshvara-chinrezig/" | relLangURL }}"> {{ i18n "AvalokiteshvaraChinrezig" }} </a></li>
+                                        <li><a href="{{ "/store/wrathful-gods--toornige-goden/" | relLangURL }}"> {{ i18n "WrathfulGods" }} </a></li>
+                                        <li><a href="{{ "/store/vajrapani/" | relLangURL }}"> {{ i18n "Vajrapani" }} </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- MOVIES -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "Movies" }}</a>
+                        <ul class="dropdown-menu border-0 shadow-lg">
+                            <li><a href="{{ "/movies/film-video-clips/" | relLangURL }}"> {{ i18n "FlimVideoClips" }} </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CRAFTS -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "Crafts" }}</a>
+                        <ul class="dropdown-menu border-0 shadow-lg">
+                            <li><a href="{{ "/crafts/lost-wax-casting/" | relLangURL }}"> {{ i18n "LostWaxCasting" }} </a></li>
+                            <li><a href="{{ "/crafts/big-buddha-casting/" | relLangURL }}"> {{ i18n "BigBuddhaCasting" }} </a></li>
+                            <li><a href="{{ "/crafts/repousembossed-chased-work/" | relLangURL }}"> {{ i18n "RepouseEmbossedChasedWork" }} </a></li>
+                            <li><a href="{{ "/crafts/marblemandalaymyanmar/" | relLangURL }}"> {{ i18n "MarbleMandalayMyanmar" }} </a></li>
+                            <li><a href="{{ "/crafts/blackstone-buddha-carving/" | relLangURL }}"> {{ i18n "BlackstoneBuddahaCarving" }} </a></li>
+                            <li><a href="{{ "/crafts/jade-applegreen-jade/" | relLangURL }}"> {{ i18n "Jade" }} </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- NEPAL -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "Nepal" }}</a>
+
+                        <div class="dropdown-menu w-100 border-0 shadow-lg start-0">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ "/nepal/nepal-2019/" | relLangURL }}"> {{ i18n "Nepal2019" }} </a></li>
+                                        <li><a href="{{ "/nepal/nepal-2018/" | relLangURL }}"> {{ i18n "Nepal2018" }} </a></li>
+                                        <li><a href="{{ "/nepal/the-never-never-constitution/" | relLangURL }}"> {{ i18n "TheNeverNeverConstitution" }} </a></li>
+                                        <li><a href="{{ "/nepal/kathmandu-valley/" | relLangURL }}"> {{ i18n "KathmanduValley" }} </a></li>
+                                        <li><a href="{{ "/nepal/election-nov-2013/" | relLangURL }}"> {{ i18n "ElectionNov2013" }} </a></li>
+                                        <li><a href="{{ "/nepal/mani-rimdu-dance-festival/" | relLangURL }}"> {{ i18n "ManiRimduDanceFestival" }} </a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-6 col-xl-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ "/nepal/shiva-ratri-festival/" | relLangURL }}"> {{ i18n "ShivaRatriFestival" }} </a></li>
+                                        <li><a href="{{ "/nepal/teej-women-festival/" | relLangURL }}"> {{ i18n "TeejWomenFestival" }} </a></li>
+                                        <li><a href="{{ "/nepal/teej-women-festival-ii/" | relLangURL }}"> {{ i18n "TeejWomenFestivalII" }} </a></li>
+                                        <li><a href="{{ "/nepal/monsoon-festival-machendranath/" | relLangURL }}"> {{ i18n "MonsoonFestivalMachendranath" }} </a></li>
+                                        <li><a href="{{ "/nepal/kumari-the-living-godess/" | relLangURL }}"> {{ i18n "KumariTheLivingGodess" }} </a></li>
+                                        <li><a href="{{ "/nepal/templeskatmandu-valley/" | relLangURL }}"> {{ i18n "TemplesKatmanduValley" }} </a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-xl-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ "/nepal/portraits-nepal/" | relLangURL }}"> {{ i18n "PortraitsNepal" }} </a></li>
+                                        <li><a href="{{ "/nepal/portraits-bw-70s/" | relLangURL }}"> {{ i18n "PortraitsBW70s" }} </a></li>
+                                        <li><a href="{{ "/nepal/old-photographs/" | relLangURL }}"> {{ i18n "OldPhotographs" }} </a></li>
+                                        <li><a href="{{ "/nepal/indra-jatra-festival/" | relLangURL }}"> {{ i18n "IndraJatraFestival" }} </a></li>
+                                        <li><a href="{{ "/nepal/dashain-festival/" | relLangURL }}"> {{ i18n "DashainFestival" }} </a></li>
+                                        <li><a href="{{ "/nepal/laxmi-puja-festival/" | relLangURL }}"> {{ i18n "LaxmiPujaFestival" }} </a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-xl-3">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{{ "/nepal/nisjes--roadside-shrines/" | relLangURL }}"> {{ i18n "NisjesRoadsideShrines" }} </a></li>
+                                        <li><a href="{{ "/nepal/lotus-offfering-plate/" | relLangURL }}"> {{ i18n "BlankLotusOffferingPlate" }} </a></li>
+                                        <li><a href="{{ "/nepal/roadside-puja/" | relLangURL }}"> {{ i18n "RoadsidePuja" }} </a></li>
+                                        <li><a href="{{ "/nepal/stupa/" | relLangURL }}"> {{ i18n "Stupa" }} </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- BURMA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "Burma" }}</a>
+                        <ul class="dropdown-menu border-0 shadow-lg">
+                            <li><a href="{{ "/burma/monkhood/" | relLangURL }}"> {{ i18n "Monkhood" }} </a></li>
+                            <li><a href="{{ "/burma/land-of-trees/" | relLangURL }}"> {{ i18n "LandofTrees" }}s </a></li>
+                            <li><a href="{{ "/burma/bits-of-burma/" | relLangURL }}"> {{ i18n "BitsofBurma" }} </a></li>
+                            <li><a href="{{ "/burma/rangoon-changing-into-yangon/" | relLangURL }}"> {{ i18n "RangoonChangingintoYangon" }} </a></li>
+                            <li><a href="{{ "/burma/restauration/" | relLangURL }}"> {{ i18n "Restauration" }} </a> </li>
+                        </ul>
+                    </li>
+
+                    <!-- TIBET -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "Tibet" }}</a>
+                        <ul class="dropdown-menu border-0 shadow-lg">
+                            <li><a href="{{ "/tibet/kailash-mani-pilgrim-stones/" | relLangURL }}"> {{ i18n "KailashManiPilgrimStones" }} </a></li>
+                            <li><a href="{{ "/tibet/sky-burial/" | relLangURL }}"> {{ i18n "SkyBurial" }} </a></li>
+                            <li><a href="{{ "/tibet/dance-costumes/" | relLangURL }}"> {{ i18n "DanceCostumes" }} </a></li>
+                            <li><a href="{{ "/tibet/hermit-dwellings-1/" | relLangURL }}"> {{ i18n "HermitDwellings" }} </a></li>
+                            <li><a href="{{ "/tibet/old-photographs/" | relLangURL }}"> {{ i18n "OldPhotographs" }} </a></li>
+                            <li><a href="{{ "/tibet/portraits/" | relLangURL }}"> {{ i18n "Portraits" }} </a></li>
+                            <li><a href="{{ "/tibet/gompamonastrythorma/" | relLangURL }}"> {{ i18n "GompaMonastryThorma" }} </a></li>
+                            <li><a href="{{ "/tibet/tantric-figures-outlined/" | relLangURL }}"> {{ i18n "TantricFiguresOutlined" }} </a></li>
+                            <li><a href="{{ "/tibet/animal-figures/" | relLangURL }}"> {{ i18n "AnimalFigures" }} Figures </a></li>
+                            <li><a href="{{ "/tibet/old-woodblock-prints/" | relLangURL }}"> {{ i18n "OldWoodblockPrints" }} </a></li>
+                            <li><a href="{{ "/tibet/tenzin-gyatso-een-wonderlijk-leven/" | relLangURL }}"> {{ i18n "TenzinGyatsoEenWonderlijkLeven" }} </a></li>
+                            <li><a href="{{ "/tibet/dalai-lama-in-switzerland-2009/" | relLangURL }}"> {{ i18n "DalaiLamainSwitzerland2009" }} </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CHINA -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "China" }}</a>
+                        <ul class="dropdown-menu border-0 shadow-lg">
+                            <li><a href="{{ "/china/porselein-jingdezhen-porcelain/" | relLangURL }}"> {{ i18n "PorseleinJingdezhenPorcelain" }} </a></li>
+                            <li><a href="{{ "/china/old-photographs/" | relLangURL }}"> {{ i18n "OldPhotographs" }} </a></li>
+                            <li><a href="{{ "/china/cities-hutongs-etc/" | relLangURL }}"> {{ i18n "CitiesHutongs" }} </a></li>
+                            <li><a href="{{ "/china/imperial-jade/" | relLangURL }}"> {{ i18n "ImperialJade" }} </a></li>
+                            <li><a href="{{ "/china/old-chinese-panel-made-of-wood/" | relLangURL }}"> {{ i18n "OldChinesePanelMadeofWood" }} </a></li>
+                            <li><a href="{{ "/china/old-chinese-panel-made-of-wood-1/" | relLangURL }}"> {{ i18n "OldChinesePanelMadeofWood1" }} </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- MIXED -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "Mixed" }}</a>
+                        <ul class="dropdown-menu border-0 shadow-lg dropdown-menu-end">
+                            <li><a href="{{ "/mixed/phallus-festival-japan/" | relLangURL }}"> {{ i18n "PhallusFestivalJapan" }} </a></li>
+                            <li><a href="{{ "/mixed/fotos-verzamelen--collecting/" | relLangURL }}"> {{ i18n "FotosVerzamelenCollecting" }} </a></li>
+                            <li><a href="{{ "/mixed/old-dehli-night-market/" | relLangURL }}"> {{ i18n "OldDehliNightMarket" }} </a></li>
+                            <li><a href="{{ "/mixed/food/" | relLangURL }}"> {{ i18n "Food" }} </a></li>
+                            <li><a href="{{ "/mixed/hippo/" | relLangURL }}"> {{ i18n "Hippo" }} </a></li>
+                            <li><a href="{{ "/mixed/the-butan-project/" | relLangURL }}"> {{ i18n "TheButanProject" }} </a></li>
+                            <li><a href="{{ "/mixed/buddhist-funeral-rites/" | relLangURL }}"> {{ i18n "BuddhistFuneralRites" }} </a></li>
+                            <li><a href="{{ "/mixed/orang-malu-alias-yogi-man/" | relLangURL }}"> {{ i18n "OrangMaluAliasYogiMan" }} </a></li>
+                            <li><a href="{{ "/mixed/restauratie--reparatie--stenenslijpen/" | relLangURL }}"> {{ i18n "RestauratieReparatieStenenslijpen" }} </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- BLOG -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-transform-uppercase" data-bs-toggle="dropdown">{{ i18n "Blog" }}</a>
+                        <ul class="dropdown-menu border-0 shadow-lg">
+                            <li><a class="dropdown-item" href="{{ "/blog/blog-nederlands/index/" | relLangURL }}">{{ i18n "Dutch" }}</a></li>
+                            <li><a class="dropdown-item" href="{{ "/blog/blog-english/index/" | relLangURL }}">{{ i18n "English" }}</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Language Switcher -->
+                    <li class="nav-item dropdown">
+                        {{ $flags := dict
+                        "en" "/img/flag-en.png"
+                        "nl" "/img/flag-nl.png"
+                        }}
+                        <a class="nav-link dropdown-toggle highlight bg-gold" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{ index $flags .Site.Language.Lang }}" alt="{{ .Site.Language.LanguageName }} flag" height="20">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+                            {{ $current := . }}
+                            {{ range .Site.Languages }}
+                            {{ if ne .Lang $.Site.Language.Lang }}
+                            <li>
+                                {{ $translated := first 1 (where $current.Translations "Lang" .Lang) }}
+                                {{ if gt (len $translated) 0 }}
+                                <a class="dropdown-item" href="{{ (index $translated 0).RelPermalink }}">
+                                    <img src="{{ index $flags .Lang }}" alt="{{ .LanguageName }} flag" height="20" />
+                                    {{ .LanguageName }}
+                                </a>
+                                {{ else }}
+                                <!-- fallback to homepage -->
+                                <a class="dropdown-item" href="{{ .Lang | relLangURL }}">
+                                    <img src="{{ index $flags .Lang }}" alt="{{ .LanguageName }} flag" height="20" />
+                                    {{ .LanguageName }}
+                                </a>
+                                {{ end }}
+                            </li>
+                            {{ end }}
+                            {{ end }}
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- MOBILE OFFCANVAS MENU -->
+            <div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasMenuLabel">{{ .Site.Params.siteName }}</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav w-100 ms-auto">
+
+                        <!-- STORE -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#storeMobile">
+                                {{ i18n "Store" }} <span>+</span>
+                            </a>
+
+                            <div class="collapse" id="storeMobile">
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ "/store/kashba-shop-interior/" | relLangURL }}"> {{ i18n "ShopInterior" }} </a></li>
+                                    <li><a href="{{ "/store/necklaces/" | relLangURL }}"> {{ i18n "Necklaces" }} </a></li>
+                                    <li><a href="{{ "/store/the-lockdown-blues/" | relLangURL }}"> {{ i18n "TheLockdownBlues" }} </a></li>
+                                    <li><a href="{{ "/store/earrings-rings-beads/" | relLangURL }}"> {{ i18n "EarringsRingsAndBeads" }} </a></li>
+                                    <li><a href="{{ "/store/pendants-hangers/" | relLangURL }}"> {{ i18n "PendantsHanger" }} </a></li>
+                                    <li><a href="{{ "/store/bracelets-silver/" | relLangURL }}"> {{ i18n "Bracelets" }} </a></li>
+                                    <li><a href="{{ "/store/ornamental-jewelry/" | relLangURL }}"> {{ i18n "OrnamentalJewelry" }} </a></li>
+                                    <li><a href="{{ "/store/statues/" | relLangURL }}"> {{ i18n "BuddhistStatuesBeelden" }} </a></li>
+                                    <li><a href="{{ "/store/buddhist-thankas-scrolls/" | relLangURL }}"> {{ i18n "BuddhistThankasScrolls" }} </a></li>
+                                    <li><a href="{{ "/store/ritual-objects/" | relLangURL }}"> {{ i18n "RitualObjects" }} </a></li>
+                                    <li><a href="{{ "/store/ornaments/" | relLangURL }}"> {{ i18n "Ornaments" }} </a></li>
+                                    <li><a href="{{ "/store/hindue-statues-beelden/" | relLangURL }}"> {{ i18n "HinduStatues" }} </a></li>
+                                    <li><a href="{{ "/store/chinese-porcelainbrushesbronzes/" | relLangURL }}"> {{ i18n "ChinesePorcelain" }} </a></li>
+                                    <li><a href="{{ "/store/tibetan-panels-chinese-furniture/" | relLangURL }}"> {{ i18n "TibetanPanelsChineseFurniture" }} </a></li>
+                                    <li><a href="{{ "/store/miscellaneous/" | relLangURL }}"> {{ i18n "Miscellaneous" }} </a></li>
+                                    <li><a href="{{ "/store/shamanisticnagaetc/" | relLangURL }}"> {{ i18n "ShamanisticNaga" }} </a></li>
+                                    <li><a href="{{ "/store/masks/" | relLangURL }}"> {{ i18n "Masks" }} </a></li>
+                                    <li><a href="{{ "/store/musical-instruments/" | relLangURL }}"> {{ i18n "MusicalInstruments" }} </a></li>
+                                    <li><a href="{{ "/store/eight-guru-rinpoche/" | relLangURL }}"> {{ i18n "EightGuruRinpoche" }} </a></li>
+                                    <li><a href="{{ "/store/avalokiteshvara-chinrezig/" | relLangURL }}"> {{ i18n "AvalokiteshvaraChinrezig" }} </a></li>
+                                    <li><a href="{{ "/store/wrathful-gods--toornige-goden/" | relLangURL }}"> {{ i18n "WrathfulGods" }} </a></li>
+                                    <li><a href="{{ "/store/vajrapani/" | relLangURL }}"> {{ i18n "Vajrapani" }} </a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- MOVIES -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#moviesMobile">
+                                {{ i18n "Movies" }} <span>+</span>
+                            </a>
+                            <div class="collapse" id="moviesMobile">
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="movies/film-video-clips.html">{{ i18n "FlimVideoClips" }}</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- CRAFTS -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#craftsMobile">
+                                {{ i18n "Crafts" }} <span>+</span>
+                            </a>
+                            <div class="collapse" id="craftsMobile">
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ "/crafts/lost-wax-casting/" | relLangURL }}"> {{ i18n "LostWaxCasting" }} </a></li>
+                                    <li><a href="{{ "/crafts/big-buddha-casting/" | relLangURL }}"> {{ i18n "BigBuddhaCasting" }} </a></li>
+                                    <li><a href="{{ "/crafts/repousembossed-chased-work/" | relLangURL }}"> {{ i18n "RepouseEmbossedChasedWork" }} </a></li>
+                                    <li><a href="{{ "/crafts/marblemandalaymyanmar/" | relLangURL }}"> {{ i18n "MarbleMandalayMyanmar" }} </a></li>
+                                    <li><a href="{{ "/crafts/blackstone-buddha-carving/" | relLangURL }}"> {{ i18n "BlackstoneBuddahaCarving" }} </a></li>
+                                    <li><a href="{{ "/crafts/jade-applegreen-jade/" | relLangURL }}"> {{ i18n "Jade" }} </a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- NEPAL -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#nepalMobile">
+                                {{ i18n "Nepal" }} <span>+</span>
+                            </a>
+                            <div class="collapse" id="nepalMobile">
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-3">
+                                        <ul class="list-unstyled">
+                                            <li><a href="{{ "/nepal/nepal-2019/" | relLangURL }}"> {{ i18n "Nepal2019" }} </a></li>
+                                            <li><a href="{{ "/nepal/nepal-2018/" | relLangURL }}"> {{ i18n "Nepal2018" }} </a></li>
+                                            <li><a href="{{ "/nepal/the-never-never-constitution/" | relLangURL }}"> {{ i18n "TheNeverNeverConstitution" }} </a></li>
+                                            <li><a href="{{ "/nepal/kathmandu-valley/" | relLangURL }}"> {{ i18n "KathmanduValley" }} </a></li>
+                                            <li><a href="{{ "/nepal/election-nov-2013/" | relLangURL }}"> {{ i18n "ElectionNov2013" }} </a></li>
+                                            <li><a href="{{ "/nepal/mani-rimdu-dance-festival/" | relLangURL }}"> {{ i18n "ManiRimduDanceFestival" }} </a></li>
+                                            <li><a href="{{ "/nepal/shiva-ratri-festival/" | relLangURL }}"> {{ i18n "ShivaRatriFestival" }} </a></li>
+                                            <li><a href="{{ "/nepal/teej-women-festival/" | relLangURL }}"> {{ i18n "TeejWomenFestival" }} </a></li>
+                                            <li><a href="{{ "/nepal/teej-women-festival-ii/" | relLangURL }}"> {{ i18n "TeejWomenFestivalII" }} </a></li>
+                                            <li><a href="{{ "/nepal/monsoon-festival-machendranath/" | relLangURL }}"> {{ i18n "MonsoonFestivalMachendranath" }} </a></li>
+                                            <li><a href="{{ "/nepal/kumari-the-living-godess/" | relLangURL }}"> {{ i18n "KumariTheLivingGodess" }} </a></li>
+                                            <li><a href="{{ "/nepal/templeskatmandu-valley/" | relLangURL }}"> {{ i18n "TemplesKatmanduValley" }} </a></li>
+                                            <li><a href="{{ "/nepal/portraits-nepal/" | relLangURL }}"> {{ i18n "PortraitsNepal" }} </a></li>
+                                            <li><a href="{{ "/nepal/portraits-bw-70s/" | relLangURL }}"> {{ i18n "PortraitsBW70s" }} </a></li>
+                                            <li><a href="{{ "/nepal/old-photographs/" | relLangURL }}"> {{ i18n "OldPhotographs" }} </a></li>
+                                            <li><a href="{{ "/nepal/indra-jatra-festival/" | relLangURL }}"> {{ i18n "IndraJatraFestival" }} </a></li>
+                                            <li><a href="{{ "/nepal/dashain-festival/" | relLangURL }}"> {{ i18n "DashainFestival" }} </a></li>
+                                            <li><a href="{{ "/nepal/laxmi-puja-festival/" | relLangURL }}"> {{ i18n "LaxmiPujaFestival" }} </a></li>
+                                            <li><a href="{{ "/nepal/nisjes--roadside-shrines/" | relLangURL }}"> {{ i18n "NisjesRoadsideShrines" }} </a></li>
+                                            <li><a href="{{ "/nepal/lotus-offfering-plate/" | relLangURL }}"> {{ i18n "BlankLotusOffferingPlate" }} </a></li>
+                                            <li><a href="{{ "/nepal/roadside-puja/" | relLangURL }}"> {{ i18n "RoadsidePuja" }} </a></li>
+                                            <li><a href="{{ "/nepal/stupa/" | relLangURL }}"> {{ i18n "Stupa" }} </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- BURMA -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#burmaMobile">
+                                {{ i18n "Burma" }} <span>+</span>
+                            </a>
+                            <div class="collapse" id="burmaMobile">
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ "/burma/monkhood/" | relLangURL }}"> {{ i18n "Monkhood" }} </a></li>
+                                    <li><a href="{{ "/burma/land-of-trees/" | relLangURL }}"> {{ i18n "LandofTrees" }}s </a></li>
+                                    <li><a href="{{ "/burma/bits-of-burma/" | relLangURL }}"> {{ i18n "BitsofBurma" }} </a></li>
+                                    <li><a href="{{ "/burma/rangoon-changing-into-yangon/" | relLangURL }}"> {{ i18n "RangoonChangingintoYangon" }} </a></li>
+                                    <li><a href="{{ "/burma/restauration/" | relLangURL }}"> {{ i18n "Restauration" }} </a> </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- TIBET -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#tibetMobile">
+                                {{ i18n "Tibet" }} <span>+</span>
+                            </a>
+                            <div class="collapse" id="tibetMobile">
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ "/tibet/kailash-mani-pilgrim-stones/" | relLangURL }}"> {{ i18n "KailashManiPilgrimStones" }} </a></li>
+                                    <li><a href="{{ "/tibet/sky-burial/" | relLangURL }}"> {{ i18n "SkyBurial" }} </a></li>
+                                    <li><a href="{{ "/tibet/dance-costumes/" | relLangURL }}"> {{ i18n "DanceCostumes" }} </a></li>
+                                    <li><a href="{{ "/tibet/hermit-dwellings-1/" | relLangURL }}"> {{ i18n "HermitDwellings" }} </a></li>
+                                    <li><a href="{{ "/tibet/old-photographs/" | relLangURL }}"> {{ i18n "OldPhotographs" }} </a></li>
+                                    <li><a href="{{ "/tibet/portraits/" | relLangURL }}"> {{ i18n "Portraits" }} </a></li>
+                                    <li><a href="{{ "/tibet/gompamonastrythorma/" | relLangURL }}"> {{ i18n "GompaMonastryThorma" }} </a></li>
+                                    <li><a href="{{ "/tibet/tantric-figures-outlined/" | relLangURL }}"> {{ i18n "TantricFiguresOutlined" }} </a></li>
+                                    <li><a href="{{ "/tibet/animal-figures/" | relLangURL }}"> {{ i18n "AnimalFigures" }} Figures </a></li>
+                                    <li><a href="{{ "/tibet/old-woodblock-prints/" | relLangURL }}"> {{ i18n "OldWoodblockPrints" }} </a></li>
+                                    <li><a href="{{ "/tibet/tenzin-gyatso-een-wonderlijk-leven/" | relLangURL }}"> {{ i18n "TenzinGyatsoEenWonderlijkLeven" }} </a></li>
+                                    <li><a href="{{ "/tibet/dalai-lama-in-switzerland-2009/" | relLangURL }}"> {{ i18n "DalaiLamainSwitzerland2009" }} </a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- CHINA -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#chainaMobile">
+                                {{ i18n "China" }} <span>+</span>
+                            </a>
+                            <div class="collapse" id="chainaMobile">
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ "/china/porselein-jingdezhen-porcelain/" | relLangURL }}"> {{ i18n "PorseleinJingdezhenPorcelain" }} </a></li>
+                                    <li><a href="{{ "/china/old-photographs/" | relLangURL }}"> {{ i18n "OldPhotographs" }} </a></li>
+                                    <li><a href="{{ "/china/cities-hutongs-etc/" | relLangURL }}"> {{ i18n "CitiesHutongs" }} </a></li>
+                                    <li><a href="{{ "/china/imperial-jade/" | relLangURL }}"> {{ i18n "ImperialJade" }} </a></li>
+                                    <li><a href="{{ "/china/old-chinese-panel-made-of-wood/" | relLangURL }}"> {{ i18n "OldChinesePanelMadeofWood" }} </a></li>
+                                    <li><a href="{{ "/china/old-chinese-panel-made-of-wood-1/" | relLangURL }}"> {{ i18n "OldChinesePanelMadeofWood1" }} </a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- MIXED -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#mixedMobile">
+                                {{ i18n "Mixed" }} <span>+</span>
+                            </a>
+                            <div class="collapse" id="mixedMobile">
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ "/mixed/phallus-festival-japan/" | relLangURL }}"> {{ i18n "PhallusFestivalJapan" }} </a></li>
+                                    <li><a href="{{ "/mixed/fotos-verzamelen--collecting/" | relLangURL }}"> {{ i18n "FotosVerzamelenCollecting" }} </a></li>
+                                    <li><a href="{{ "/mixed/old-dehli-night-market/" | relLangURL }}"> {{ i18n "OldDehliNightMarket" }} </a></li>
+                                    <li><a href="{{ "/mixed/food/" | relLangURL }}"> {{ i18n "Food" }} </a></li>
+                                    <li><a href="{{ "/mixed/hippo/" | relLangURL }}"> {{ i18n "Hippo" }} </a></li>
+                                    <li><a href="{{ "/mixed/the-butan-project/" | relLangURL }}"> {{ i18n "TheButanProject" }} </a></li>
+                                    <li><a href="{{ "/mixed/buddhist-funeral-rites/" | relLangURL }}"> {{ i18n "BuddhistFuneralRites" }} </a></li>
+                                    <li><a href="{{ "/mixed/orang-malu-alias-yogi-man/" | relLangURL }}"> {{ i18n "OrangMaluAliasYogiMan" }} </a></li>
+                                    <li><a href="{{ "/mixed/restauratie--reparatie--stenenslijpen/" | relLangURL }}"> {{ i18n "RestauratieReparatieStenenslijpen" }} </a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- BLOG -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex justify-content-between" data-bs-toggle="collapse" href="#blogMobile">
+                                {{ i18n "Blog" }} <span>+</span>
+                            </a>
+                            <div class="collapse" id="blogMobile">
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="{{ "/blog/blog-nederlands/index/" | relLangURL }}">{{ i18n "Dutch" }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ "/blog/blog-english/index/" | relLangURL }}">{{ i18n "English" }}</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

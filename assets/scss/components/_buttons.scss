@@ -1,0 +1,22 @@
+@import "../abstracts/variables";
+@import "../base/mixins";
+
+.btn-gold {
+    display: inline-block;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 24px;
+    transition: 0.3s;
+    background: $gold;
+    color: #664f00;
+    border: 1px solid $gold;
+    transition: all .5s;
+    font-weight: 600;
+
+    &:hover {
+        opacity: .75;
+        color: $gold;
+        background: transparent;
+        border: 1px solid $gold;
+    }
+}

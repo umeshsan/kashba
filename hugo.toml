@@ -1,0 +1,29 @@
+baseURL = "/"
+title = 'Kashba'
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableInlineShortcodes = true
+disableFastRender = false
+relativeURLs = false
+canonifyURLs = true
+
+[params]
+  siteName = "Kashba"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+    contentDir = "content/en"
+
+  [languages.nl]
+    languageName = "Dutch"
+    languageCode = "nl"
+    weight = 2
+    contentDir = "content/nl"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

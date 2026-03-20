@@ -1,0 +1,35 @@
+@import "../abstracts/variables";
+@import "../base/mixins";
+
+.card {
+    position: relative;
+    color: white;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    transition: all ease 0.5s;
+    text-decoration: none;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background-image: repeating-linear-gradient(45deg,
+            rgba(212, 175, 55, .03),
+            rgba(212, 175, 55, .03) 2px,
+            transparent 2px,
+            transparent 10px);
+
+        pointer-events: none;
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 30px rgba(212, 175, 55, .5);
+    }
+
+    .product-title {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+}

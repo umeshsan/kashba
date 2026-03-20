@@ -1,0 +1,78 @@
+{{ define "main" }}
+
+<section class="menu-hero">
+    <div class="container">
+        <h1>{{ i18n "FlimVideoClips" }}</h1>
+        <p>Film, video, clips...</p>
+    </div>
+</section>
+<nav class="breadcrumb-nav" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">{{ i18n "Movies" }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ i18n "FlimVideoClips" }}</li>
+        </ol>
+    </div>
+</nav>
+<section>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-xl-2 product-list-wrap g-3 justify-content-center">
+            <div class="col">
+                <a href="{{ "https://www.kashba.nl/movies/ewExternalFiles/MANI%20RIMDU.mp4" | relURL }}" class="card mb-4 flex-row align-items-center" data-fancybox="gallery" data-caption="movies | Kashba Shop Interior">
+                    <figure class="ratio ratio-4x3 overflow-hidden mb-0">
+                        <img class="object-fit-cover" src="{{ "/img/movies/mani_rimdu.jpg" | relURL }}">
+                    </figure>
+                    <div class="info-wrap py-2 px-3">
+                        <p class="product-title text-dark">
+                            Mani Rimdu is an annual festival in Thame in the Kumbu region of the Himalayas in Nepal. <br><br>All photos were taken in 1976.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="{{ "https://www.kashba.nl/movies/ewExternalFiles/Monsoon.mp4" | relURL }}" class="card mb-4 flex-row align-items-center" data-fancybox="gallery" data-caption="movies | Kashba Shop Interior">
+                    <figure class="ratio ratio-4x3 overflow-hidden mb-0">
+                        <img class="object-fit-cover" src="{{ "/img/movies/machhendranath.jpg" | relURL }}">
+                    </figure>
+                    <div class="info-wrap py-2 px-3">
+                        <p class="product-title text-dark">
+                            Monsoon was and still is one of my favourite seasons. <br><br>After the 'wind month' of March, all the dry dust and sand (some from the Rajasthan desert) is washed away.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="{{ "/img/movies/bhaktapur.png" | relURL }}" class="card mb-4 flex-row align-items-center" data-fancybox="gallery" data-caption="movies | Kashba Shop Interior">
+                    <figure class="ratio ratio-4x3 overflow-hidden mb-0">
+                        <img class="object-fit-cover" src="{{ "/img/movies/bhaktapur.png" | relURL }}">
+                    </figure>
+                    <div class="info-wrap py-2 px-3">
+                        <p class="product-title text-dark">
+                            "All in one note, Pure and Easy"<br>
+                            <small>(After a Song of The Who).</small><br><br>
+                            Bhaktapur, Nepal. 2025
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="{{ "/img/movies/hindu_temple_kathmandu.jpg" | relURL }}" class="card mb-4 flex-row align-items-center" data-fancybox="gallery" data-caption="movies | Kashba Shop Interior">
+                    <figure class="ratio ratio-4x3 overflow-hidden mb-0">
+                        <img class="object-fit-cover" src="{{ "/img/movies/hindu_temple_kathmandu.jpg" | relURL }}">
+                    </figure>
+                    <div class="info-wrap py-2 px-3">
+                        <p class="product-title text-dark">
+                            "Hindu Temple"<br>
+                            Nepal 2013.<br><br>
+                            Beelden, rituelen, kleuren en gezangen.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

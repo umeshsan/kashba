@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<section class="menu-hero">
+    <div class="container">
+        <h1>{{ i18n "RitualObjects" }}</h1>
+        <p>Pictures taken over the years</p>
+    </div>
+</section>
+<nav class="breadcrumb-nav" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">{{ i18n "Store" }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ i18n "RitualObjects" }}</li>
+        </ol>
+    </div>
+</nav>
+<section>
+    <div class="container">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 product-list-wrap g-3 justify-content-center">
+            <div class="col">
+                <a href="{{ "/img/store/shop-interior/1.gif" | relURL }}" class="card mb-4 d-block" data-fancybox="gallery" data-caption="Store | Kashba Shop Interior">
+                    <figure class="ratio ratio-1x1 overflow-hidden mb-0">
+                        <img class="object-fit-cover" src="{{ "/img/store/shop-interior/1.gif" | relURL }}">
+                    </figure>
+                    <div class="info-wrap py-2 px-3">
+                        <p class="product-title text-dark line-clamp-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="{{ "/img/store/shop-interior/2.gif" | relURL }}" class="card mb-4 d-block" data-fancybox="gallery" data-caption="Store | Kashba Shop Interior">
+                    <figure class="ratio ratio-1x1 overflow-hidden mb-0">
+                        <img class="object-fit-cover" src="{{ "/img/store/shop-interior/2.gif" | relURL }}">
+                    </figure>
+                    <div class="info-wrap py-2 px-3">
+                        <p class="product-title text-dark line-clamp-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="{{ "/img/store/shop-interior/3.jpg" | relURL }}" class="card mb-4 d-block" data-fancybox="gallery" data-caption="Store | Kashba Shop Interior">
+                    <figure class="ratio ratio-1x1 overflow-hidden mb-0">
+                        <img class="object-fit-cover" src="{{ "/img/store/shop-interior/3.jpg" | relURL }}">
+                    </figure>
+                    <div class="info-wrap py-2 px-3">
+                        <p class="product-title text-dark line-clamp-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

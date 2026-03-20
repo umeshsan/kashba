@@ -1,0 +1,102 @@
+{{ define "main" }}
+<!-- HERO VIDEO -->
+<section class="hero d-flex align-items-center position-relative">
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- LEFT INFO COLUMN 30% -->
+            <div class="d-flex flex-column justify-content-xxl-center justify-content-start position-relative p-3 info-col" style="z-index:2;" data-aos="slide-right">
+                <div class="contact-info">
+                    <h2 class="fw-bold mb-3">KASHBA <small class="fs-4">Asiatica</small></h2>
+                    <p class="mb-1">Ais Loupatty <spam class="px-3">|</spam> Ton Lankreijer</p>
+                    <hr>
+                    <h5 class="fw-semibold mt-2 mb-1">{{ i18n "Address" }}</h5>
+                    <p class="mb-1">Staalstraat 6, 1011 JL Amsterdam</p>
+                    <hr>
+
+                    <h5 class="fw-semibold mb-1">{{ i18n "OpeningHours" }}</h5>
+                    <p class="mb-1">Open: 12:00 – 17:00</p>
+                    <p class="mb-1">{{ i18n "Sunday" }}: 14:00 – 17:00</p>
+                    <p class="mb-1 text-danger">{{ i18n "Closed" }}: 9 {{ i18n "March" }} – 2 April</p>
+                    <hr>
+
+                    <h5 class="fw-semibold mb-1">Contact</h5>
+                    <div class="row row-cols-2">
+                        <p class="mb-1">
+                            <i class="bi bi-phone me-2"></i>
+                            <a href="tel:31-20-6235564" class="text-white text-decoration-underline">31-20 - 6 23 55 64</a>
+                        </p>
+                        <p class="mb-1">
+                            <i class="bi bi-telephone me-2"></i>
+                            <a href="tel:06-58841370" class="text-white text-decoration-underline">06 - 588 41 370</a>
+                        </p>
+                        <p class="mb-1">
+                            <i class="bi bi-envelope me-2"></i>
+                            <a href="mailto:lankreijer@me.com" class="text-white text-decoration-underline">lankreijer@me.com</a>
+                        </p>
+                        <p class="mb-0">
+                            <i class="bi bi-instagram me-2"></i>
+                            <a href="https://www.instagram.com/kashbaasiatica" target="_blank" class="text-white text-decoration-underline">@kashbaasiatica</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE SLIDER 70% -->
+            <div class="heroslider-col p-0">
+                <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{ "/img/slide1.jpg" | relURL }}" class="d-block w-100 object-fit-cover" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ "/img/slide2.jpg" | relURL }}" class="d-block w-100 object-fit-cover" alt="Slide 2">
+                        </div>
+                    </div>
+                    <!-- CUSTOM PAGINATION -->
+                    <div class="custom-pagination">
+                        <span data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></span>
+                        <span data-bs-target="#heroCarousel" data-bs-slide-to="1"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="hero-overlay position-absolute w-100 top-0 start-0" style="background: rgba(0,0,0,0.30);"></div>
+</section>
+
+<!-- SPLIT SECTION -->
+<section class="sc-about-us container overflow-hidden">
+    <div class="row">
+        <div class="col-md-4" data-aos="zoom-in">
+            <figure class="kashba-img d-flex justify-content-end pe-5"><img src="{{ "/img/kashba.jpg" | relURL }}"></figure>
+        </div>
+        <div class="col-md-8">
+            <h2 class="fw-bold mb-4" data-aos="fade-up">{{ i18n "AboutUs" }}</h2>
+            <p data-aos="fade-up">{{ i18n "AboutPara1" }}</p>
+            <p data-aos="fade-up">{{ i18n "AboutPara2" }}</p>
+            <p data-aos="fade-up">{{ i18n "AboutPara3" }}</p>
+            <p data-aos="fade-up">{{ i18n "AboutPara4" }}</p>
+            <p data-aos="fade-up">{{ i18n "AboutPara5" }}</p>
+            <p data-aos="fade-up">{{ i18n "AboutPara6" }}</p>
+            <p data-aos="fade-up">{{ i18n "AboutPara7" }}</p>
+
+            <div class="fw-medium text-end mt-5 fs-5" data-aos="slide-left"><strong>Ais Loupatty <br> Ton Lankreijer</strong></div>
+
+            <div class="d-flex align-items-end justify-content-end mt-4 image-group gap-3">
+                <figure data-aos="fade-up"><img src="{{ "/img/ais-loupatty.jpg" | relURL }}"></figure>
+                <figure data-aos="fade-up"><img src="{{ "/img/ton-lankreijer.jpg" | relURL }}"></figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax">
+    <h2>Handmade With Passion</h2>
+</section>
+
+{{ end }}

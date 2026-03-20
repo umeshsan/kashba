@@ -1,0 +1,330 @@
+# Header / menus
+- id: 'Store'
+  translation: 'Winkel'
+
+- id: 'ShopInterior'
+  translation: 'Winkelinterieur'
+
+- id: 'Necklaces'
+  translation: 'Halskettingen'
+
+- id: 'TheLockdownBlues'
+  translation: 'De Lockdown Blues'
+
+- id: 'EarringsRingsAndBeads'
+  translation: 'Oorbellen, Ringen en Kralen'
+
+- id: 'PendantsHanger'
+  translation: 'Hangers / Hangers (Pendants)'
+
+- id: 'Bracelets'
+  translation: 'Armbanden'
+
+- id: 'OrnamentalJewelry'
+  translation: 'Sieraden'
+
+- id: 'BuddhistStatuesBeelden'
+  translation: 'Boeddhabeelden'
+
+- id: 'BuddhistThankasScrolls'
+  translation: 'Boeddhistische Thangka’s / Rollen'
+
+- id: 'RitualObjects'
+  translation: 'Rituele Objecten'
+
+- id: 'Ornaments'
+  translation: 'Ornamenten'
+
+- id: 'HinduStatues'
+  translation: 'Hindoeïstische Beelden'
+
+- id: 'ChinesePorcelain'
+  translation: 'Chinees Porselein / Penselen / Bronzen'
+
+- id: 'TibetanPanelsChineseFurniture'
+  translation: 'Tibetaanse Panelen / Chinees Meubilair'
+
+- id: 'Miscellaneous'
+  translation: 'Diversen'
+
+- id: 'ShamanisticNaga'
+  translation: 'Sjamanistisch, Naga, enz.'
+
+- id: 'Masks'
+  translation: 'Maskers'
+
+- id: 'MusicalInstruments'
+  translation: 'Muziekinstrumenten'
+
+- id: 'EightGuruRinpoche'
+  translation: 'Acht Guru Rinpoche'
+
+- id: 'AvalokiteshvaraChinrezig'
+  translation: 'Avalokiteshvara Chinrezig'
+
+- id: 'WrathfulGods'
+  translation: 'Toornige Goden'
+
+- id: 'Vajrapani'
+  translation: 'Vajrapani'
+
+- id: 'Movies'
+  translation: 'Movies'
+
+- id: 'FlimVideoClips'
+  translation: 'Flim Video Clips'
+
+- id: 'Crafts'
+  translation: 'Ambachten'
+
+- id: 'LostWaxCasting'
+  translation: 'Verloren Was Gieten'
+
+- id: 'BigBuddhaCasting'
+  translation: 'Groot Boeddha Gieten'
+
+- id: 'RepouseEmbossedChasedWork'
+  translation: 'Repoussé, Embossing en Ciseleren'
+
+- id: 'MarbleMandalayMyanmar'
+  translation: 'Marmer, Mandalay, Myanmar'
+
+- id: 'BlackstoneBuddahaCarving'
+  translation: 'Zwarte Steen Boeddha Snijwerk'
+
+- id: 'Jade'
+  translation: 'Jade, Appelgroene Jade'
+
+- id: 'Nepal'
+  translation: 'Nepal'
+
+- id: 'Nepal2019'
+  translation: 'Nepal2019'
+
+- id: 'Nepal2018'
+  translation: 'Nepal 2018'
+
+- id: 'TheNeverNeverConstitution'
+  translation: 'De Never Never Constitutie'
+
+- id: 'KathmanduValley'
+  translation: 'Kathmandu Vallei'
+
+- id: 'ElectionNov2013'
+  translation: 'Verkiezingen november 2013'
+
+- id: 'ManiRimduDanceFestival'
+  translation: 'Mani Rimdu Dansfestival'
+
+- id: 'ShivaRatriFestival'
+  translation: 'Shiva Ratri Festival'
+
+- id: 'TeejWomenFestival'
+  translation: 'Teej Vrouwenfestival'
+
+- id: 'TeejWomenFestivalII'
+  translation: 'Teej Vrouwenfestival II'
+
+- id: 'MonsoonFestivalMachendranath'
+  translation: 'Moessonfestival Machendranath'
+
+- id: 'KumariTheLivingGodess'
+  translation: 'Kumari “De Levende Godin”'
+
+- id: 'TemplesKatmanduValley'
+  translation: 'Tempels “Kathmandu Vallei”'
+
+- id: 'PortraitsNepal'
+  translation: 'Portretten Nepal'
+
+- id: 'PortraitsBW70s'
+  translation: 'Portretten Zwart-Wit jaren 70'
+
+- id: 'OldPhotographs'
+  translation: 'Oude Foto’s'
+
+- id: 'IndraJatraFestival'
+  translation: 'Indra Jatra Festival'
+
+- id: 'DashainFestival'
+  translation: 'Dashain Festival'
+
+- id: 'LaxmiPujaFestival'
+  translation: 'Laxmi Puja Festival'
+
+- id: 'NisjesRoadsideShrines'
+  translation: 'Nisjes / Straatheiligdommen'
+
+- id: 'BlankLotusOffferingPlate'
+  translation: 'Blanco Lotus Offerplaat'
+
+- id: 'RoadsidePuja'
+  translation: 'Straat Puja'
+
+- id: 'Stupa'
+  translation: 'Stupa'
+
+- id: 'Burma'
+  translation: 'Birma'
+
+- id: 'Monkhood'
+  translation: 'Monnikschap'
+
+- id: 'LandofTrees'
+  translation: 'Land van Bomen'
+
+- id: 'BitsofBurma'
+  translation: 'Fragmenten van Birma'
+
+- id: 'RangoonChangingintoYangon'
+  translation: 'Rangoon, verandert in Yangon'
+
+- id: 'Restauration'
+  translation: 'Restauratie'
+
+- id: 'Tibet'
+  translation: 'Tibet'
+
+- id: 'KailashManiPilgrimStones'
+  translation: 'Kailash Mani Pelgrimsstenen'
+
+- id: 'SkyBurial'
+  translation: 'Hemelbegrafenis'
+
+- id: 'DanceCostumes'
+  translation: 'Danskostuums'
+
+- id: 'HermitDwellings'
+  translation: 'Kluizenaarswoningen'
+
+- id: 'OldPhotographs'
+  translation: 'Oude Foto’s'
+
+- id: 'Portraits'
+  translation: 'Portretten'
+
+- id: 'GompaMonastryThorma'
+  translation: 'Gompa / Klooster / Thorma'
+
+- id: 'TantricFiguresOutlined'
+  translation: 'Tantrische Figuren (omlijnd)'
+
+- id: 'AnimalFigures'
+  translation: 'Dierfiguren'
+
+- id: 'OldWoodblockPrints'
+  translation: 'Oude Houtsneden'
+
+- id: 'TenzinGyatsoEenWonderlijkLeven'
+  translation: 'Tenzin Gyatso, Een Wonderlijk Leven'
+
+- id: 'DalaiLamainSwitzerland2009'
+  translation: 'Dalai Lama in Zwitserland 2009'
+
+- id: 'China'
+  translation: 'China'
+
+- id: 'PorseleinJingdezhenPorcelain'
+  translation: 'Porselein (Jingdezhen)'
+
+- id: 'OldPhotographs'
+  translation: 'Oude Foto’s'
+
+- id: 'CitiesHutongs'
+  translation: 'Steden, Hutongs, enz.'
+
+- id: 'ImperialJade'
+  translation: 'Keizerlijke Jade'
+
+- id: 'OldChinesePanelMadeofWood'
+  translation: 'Oud Chinees Houten Paneel'
+
+- id: 'OldChinesePanelMadeofWood1'
+  translation: 'Oud Chinees Houten Paneel-1'
+
+- id: 'Blog'
+  translation: 'Blog'
+
+- id: 'Dutch'
+  translation: 'Dutch'
+
+- id: 'English'
+  translation: 'Engels'
+
+- id: 'Mixed'
+  translation: 'Gemengd'
+
+- id: 'PhallusFestivalJapan'
+  translation: 'Fallusfestival, Japan'
+
+- id: 'FotosVerzamelenCollecting'
+  translation: 'Foto’s Verzamelen / Collectie'
+
+- id: 'OldDehliNightMarket'
+  translation: 'Oude Delhi Nachtmarkt'
+
+- id: 'Food'
+  translation: 'Voedsel'
+
+- id: 'Hippo'
+  translation: 'Nijlpaard'
+
+- id: 'TheButanProject'
+  translation: 'Het Bhutan Project'
+
+- id: 'BuddhistFuneralRites'
+  translation: 'Boeddhistische Begrafenisrituelen'
+
+- id: 'OrangMaluAliasYogiMan'
+  translation: 'Orang Malu alias Yogi Man'
+
+- id: 'RestauratieReparatieStenenslijpen'
+  translation: 'Restauratie / Reparatie / Steenbewerking'
+
+#HeroSlider
+- id: 'Sunday'
+  translation: 'Zondag'
+
+- id: 'March'
+  translation: 'Maart'
+
+- id: 'Closed'
+  translation: 'Gesloten'
+
+- id: 'Address'
+  translation: 'Adres'
+
+- id: 'OpeningHours'
+  translation: 'Openingstijden'
+
+- id: 'LocationHours'
+  translation: 'Locatie en Openingstijden'
+
+- id: 'Owners'
+  translation: 'Eigenaren'
+
+#AboutUs
+- id: 'AboutUs'
+  translation: 'Over Ons'
+
+- id: 'AboutPara1'
+  translation: 'Kashba begon in het begin van de jaren zestig, toen de allereerste Afghaanse jassen naar Amsterdam werden gebracht.'
+
+- id: 'AboutPara2'
+  translation: 'Sindsdien hebben wij uitgebreid gereisd en selecteren wij onze eigen import uit landen in heel Azië, voornamelijk uit India, Nepal, Tibet en China.'
+
+- id: 'AboutPara3'
+  translation: 'Onze belangrijkste criteria zijn kwaliteit en authenticiteit, ongeacht de leeftijd.'
+
+- id: 'AboutPara4'
+  translation: 'Met deze website geven wij een indruk van onze collectie en geschiedenis.'
+
+- id: 'AboutPara5'
+  translation: 'Wanneer men naar een prachtig kunstwerk kijkt, vraagt men zich af hoe en waar het is gemaakt. Vanaf het allereerste begin hebben wij foto’s gemaakt, waarvan u er hier vele kunt vinden. Hoe meer u weet, hoe meer u ziet.'
+
+- id: 'AboutPara6'
+  translation: 'Kom gerust bij ons langs of stuur ons een e-mail als u vragen heeft. In de loop der jaren hebben wij geleerd om niet via de website te verkopen. Helaas zijn er te veel tijdrovende overlast en onserieuze mensen.'
+
+- id: 'AboutPara7'
+  translation: 'Natuurlijk blijft een algemene, introductieve e-mail mogelijk. Maar wij zullen alleen reageren als u zich correct voorstelt en als wij ervan overtuigd zijn dat u werkelijk geïnteresseerd bent.'
+

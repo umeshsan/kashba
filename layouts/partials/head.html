@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ "/img/site-icon/favicon-96x96.png" | relURL }}" sizes="96x96" />
+<link rel="icon" type="image/png" href="{{ "/img/site-icon/web-app-manifest-192x192.png" | relURL }}" sizes="192x192" />
+<link rel="icon" type="image/png" href="{{ "/img/site-icon/web-app-manifest-512x512.png" | relURL }}" sizes="512x512" />
+
+<link rel="icon" type="image/svg+xml" href="{{ "/img/site-icon/favicon.svg" | relURL }}" />
+<link rel="shortcut icon" href="{{ "/img/site-icon/favicon.ico" | relURL }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/img/site-icon/apple-touch-icon.png" | relURL }}" />
+<link rel="manifest" href="{{ "/img/site-icon/site.webmanifest" | relURL }}" />
+
+<!-- Googlefonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ "css/bootstrap-5.3.8/bootstrap.min.css" | relURL }}">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="{{ "css/bootstrap-icons-1.13.1/bootstrap-icons.min.css" | relURL }}">
+
+<!-- AOS CSS -->
+<link rel="stylesheet" href="{{ "css/aos-2.3.1/aos.min.css" | relURL }}">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="{{ "css/swiper-11.2.10/swiper-bundle.min.css" | relURL }}">
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="{{ "css/fancybox-6.1.7/fancybox.min.css" | relURL }}">
+
+<!-- Optional: your custom CSS -->
+<!-- {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/main.css") | minify }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}"> -->
+
+{{ $scss := resources.Get "scss/main.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $scss.RelPermalink }}" integrity="{{ $scss.Data.Integrity }}">

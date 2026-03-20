@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<!-- Determine page-specific class -->
+{{ $class := "" }}
+{{ if eq .RelPermalink ("/" | relLangURL) }}
+{{ $class = "index" }}
+{{ else if strings.HasPrefix .RelPermalink ("/store/" | relLangURL) }}
+{{ $class = "store" }}
+{{ else if strings.HasPrefix .RelPermalink ("/movies/" | relLangURL) }}
+{{ $class = "movies" }}
+{{ else if strings.HasPrefix .RelPermalink ("/crafts/" | relLangURL) }}
+{{ $class = "crafts" }}
+{{ else if strings.HasPrefix .RelPermalink ("/nepal/" | relLangURL) }}
+{{ $class = "nepal" }}
+{{ else if strings.HasPrefix .RelPermalink ("/burma/" | relLangURL) }}
+{{ $class = "burma" }}
+{{ else if strings.HasPrefix .RelPermalink ("/china/" | relLangURL) }}
+{{ $class = "china" }}
+{{ else if strings.HasPrefix .RelPermalink ("/blog/" | relLangURL) }}
+{{ $class = "blog" }}
+{{ else if strings.HasPrefix .RelPermalink ("/mixed/" | relLangURL) }}
+{{ $class = "mixed" }}
+{{ end }}
+
+<body class="{{ if .IsHome }}home-page{{ else }}{{ .File.TranslationBaseName }}{{ end }}-page">
+    {{ partial "header.html" . }}
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+
+
+    <!-- jQuery v4.0.0-->
+    <script src=" {{"js/jquery-4.0.0.min.js" | relURL }}"></script>
+
+    <!-- Bootstrap v5.3.3 JS -->
+    <script src=" {{"js/bootstrap.bundle.min.js" | relURL }}"></script>
+
+    <!-- AOS JS -->
+    <script src=" {{"js/aos.min.js" | relURL }}"></script>
+
+    <!-- Swiper JS -->
+    <script src=" {{"js/swiper-bundle.min.js" | relURL }}"></script>
+
+    <!-- Fancybox JS -->
+    <script src=" {{"js/fancybox.min.js" | relURL }}"></script>
+
+    <!-- Scroll Reveal JS -->
+    <script src=" {{"js/scrollreveal.min.js" | relURL }}"></script>
+
+    <!-- Custom JS -->
+    <script src=" {{"js/custom.js" | relURL }}"></script>
+</body>
+
+</html>

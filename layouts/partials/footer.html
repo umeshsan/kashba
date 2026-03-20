@@ -1,0 +1,50 @@
+<!-- FOOTER -->
+<footer class="bg-dark text-light">
+    <div class="container">
+        <!-- Brand / Logo -->
+        <div class="mb-5">
+            <a class="navbar-brand fw-bold ftr-logo" href="{{ "/" | relLangURL }}">
+                <img src="{{ "/img/kashba.jpg" | relURL }}" alt="{{ .Site.Params.siteName }}">
+            </a>
+            <h4 class="fw-bold text-uppercase">KASHBA Asiatica</h4>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <!-- Owners / Info -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-semibold">{{ i18n "Owners" }}</h5>
+                <p class="mb-1">Ais Loupatty</p>
+                <p>Ton Lankreijer</p>
+            </div>
+
+            <!-- Address & Hours -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-semibold">{{ i18n "LocationHours" }}</h5>
+                <p class="mb-1">Staalstraat 6, 1011 JL Amsterdam</p>
+                <p class="mb-1">Open 12:00 – 17:00</p>
+                <p class="mb-1">{{ i18n "Sunday" }} 14:00 – 17:00</p>
+                <p class="text-danger mb-0">Closed: 9 {{ i18n "March" }} – 2 April</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-semibold">Contact</h5>
+                <p class="mb-1"><i class="bi bi-phone me-2"></i><a href="tel:31-20-6235564" class="text-light">31-20 - 6 23 55 64</a></p>
+                <p class="mb-1"><i class="bi bi-telephone me-2"></i><a href="tel:06-58841370" class="text-light">06 - 588 41 370</a></p>
+                <p class="mb-1"><i class="bi bi-envelope me-2"></i><a href="mailto:lankreijer@me.com" class="text-light text-decoration-underline">lankreijer@me.com</a></p>
+                <p class="mb-0"><i class="bi bi-instagram me-2"></i><a href="https://www.instagram.com/kashbaasiatica" target="_blank" class="text-light text-decoration-underline">@kashbaasiatica</a></p>
+            </div>
+
+        </div>
+
+        <hr class="bg-secondary">
+
+        <div class="text-center small text-white">
+            <p class="copyright">© {{ now.Format "2006" }} <a href="{{ "/" | relLangURL }}">{{ .Site.Params.siteName }}</a>. All rights reserved.</p>
+            <p><small>All photographs and texts ©Kashba <span class="clr-gold">Ais Loupatty</span> & <span class="clr-gold">Ton Lankreijer</span>. Webdesign: William Loupatty</small></p>
+        </div>
+    </div>
+</footer>
+
+<div class="topTop">
+    <img src="{{ "/img/icon-up.svg" | relURL }}" alt="Scroll to Top">
+</div>

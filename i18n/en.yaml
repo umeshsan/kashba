@@ -1,0 +1,330 @@
+# Header / menus
+- id: 'Store'
+  translation: 'Store'
+
+- id: 'ShopInterior'
+  translation: 'Shop Interior'
+
+- id: 'Necklaces'
+  translation: 'Necklaces'
+
+- id: 'TheLockdownBlues'
+  translation: 'The Lockdown Blues'
+
+- id: 'EarringsRingsAndBeads'
+  translation: 'Earrings, Rings And Beads'
+
+- id: 'PendantsHanger'
+  translation: 'Pendants / Hanger'
+
+- id: 'Bracelets'
+  translation: 'Bracelets'
+
+- id: 'OrnamentalJewelry'
+  translation: 'Ornamental Jewelry'
+
+- id: 'BuddhistStatuesBeelden'
+  translation: 'Buddhist Statues / Beelden'
+
+- id: 'BuddhistThankasScrolls'
+  translation: 'Buddhist Thankas / Scrolls'
+
+- id: 'RitualObjects'
+  translation: 'Ritual Objects'
+
+- id: 'Ornaments'
+  translation: 'Ornaments'
+
+- id: 'HinduStatues'
+  translation: 'Hindu Statues'
+
+- id: 'ChinesePorcelain'
+  translation: 'Chinese Porcelain / Brushes / Bronzes'
+
+- id: 'TibetanPanelsChineseFurniture'
+  translation: 'Tibetan Panels / Chinese Furniture'
+
+- id: 'Miscellaneous'
+  translation: 'Miscellaneous'
+
+- id: 'ShamanisticNaga'
+  translation: 'Shamanistic, Naga, etc'
+
+- id: 'Masks'
+  translation: 'Masks'
+
+- id: 'MusicalInstruments'
+  translation: 'Musical Instruments'
+
+- id: 'EightGuruRinpoche'
+  translation: 'Eight Guru Rinpoche'
+
+- id: 'AvalokiteshvaraChinrezig'
+  translation: 'Avalokiteshvara Chinrezig'
+
+- id: 'WrathfulGods'
+  translation: 'Wrathful Gods'
+
+- id: 'Vajrapani'
+  translation: 'Vajrapani'
+
+- id: 'Movies'
+  translation: 'Movies'
+
+- id: 'FlimVideoClips'
+  translation: 'Flim Video Clips'
+
+- id: 'Crafts'
+  translation: 'Crafts'
+
+- id: 'LostWaxCasting'
+  translation: 'Lost wax Casting'
+
+- id: 'BigBuddhaCasting'
+  translation: 'Big Buddha Casting'
+
+- id: 'RepouseEmbossedChasedWork'
+  translation: 'Repousé, Embossed, Chased Work'
+
+- id: 'MarbleMandalayMyanmar'
+  translation: 'Marble, Mandalay, Myanmar'
+
+- id: 'BlackstoneBuddahaCarving'
+  translation: 'Blackstone Buddaha Carving'
+
+- id: 'Jade'
+  translation: 'Jade, Applegreen Jade'
+
+- id: 'Nepal'
+  translation: 'Nepal'
+
+- id: 'Nepal2019'
+  translation: 'Nepal2019'
+
+- id: 'Nepal2018'
+  translation: 'Nepal 2018'
+
+- id: 'TheNeverNeverConstitution'
+  translation: 'The Never Never Constitution'
+
+- id: 'KathmanduValley'
+  translation: 'Kathmandu Valley'
+
+- id: 'ElectionNov2013'
+  translation: 'Election Nov 2013'
+
+- id: 'ManiRimduDanceFestival'
+  translation: 'Mani Rimdu Dance Festival'
+
+- id: 'ShivaRatriFestival'
+  translation: 'Shiva Ratri Festival'
+
+- id: 'TeejWomenFestival'
+  translation: 'Teej Women Festival'
+
+- id: 'TeejWomenFestivalII'
+  translation: 'Teej Women Festival II'
+
+- id: 'MonsoonFestivalMachendranath'
+  translation: 'Monsoon Festival Machendranath'
+
+- id: 'KumariTheLivingGodess'
+  translation: 'Kumari "The Living Godess"'
+
+- id: 'TemplesKatmanduValley'
+  translation: 'Temples "Katmandu Valley"'
+
+- id: 'PortraitsNepal'
+  translation: 'Portraits Nepal'
+
+- id: 'PortraitsBW70s'
+  translation: 'Portraits BW 70s'
+
+- id: 'OldPhotographs'
+  translation: 'Old Photographs'
+
+- id: 'IndraJatraFestival'
+  translation: 'Indra Jatra Festival'
+
+- id: 'DashainFestival'
+  translation: 'Dashain Festival'
+
+- id: 'LaxmiPujaFestival'
+  translation: 'Laxmi Puja Festival'
+
+- id: 'NisjesRoadsideShrines'
+  translation: 'Nisjes / Roadside Shrines'
+
+- id: 'BlankLotusOffferingPlate'
+  translation: 'Blank Lotus Offfering Plate'
+
+- id: 'RoadsidePuja'
+  translation: 'Roadside Puja'
+
+- id: 'Stupa'
+  translation: 'Stupa'
+
+- id: 'Burma'
+  translation: 'Burma'
+
+- id: 'Monkhood'
+  translation: 'Monkhood'
+
+- id: 'LandofTrees'
+  translation: 'Land of Trees'
+
+- id: 'BitsofBurma'
+  translation: 'Bits of Burma'
+
+- id: 'RangoonChangingintoYangon'
+  translation: 'Rangoon, Changing into Yangon'
+
+- id: 'Restauration'
+  translation: 'Restauration'
+
+- id: 'Tibet'
+  translation: 'Tibet'
+
+- id: 'KailashManiPilgrimStones'
+  translation: 'Kailash Mani Pilgrim Stones'
+
+- id: 'SkyBurial'
+  translation: 'Sky Burial'
+
+- id: 'DanceCostumes'
+  translation: 'Dance Costumes'
+
+- id: 'HermitDwellings'
+  translation: 'Hermit Dwellings'
+
+- id: 'OldPhotographs'
+  translation: 'Old Photographs'
+
+- id: 'Portraits'
+  translation: 'Portraits'
+
+- id: 'GompaMonastryThorma'
+  translation: 'Gompa / Monastry / Thorma'
+
+- id: 'TantricFiguresOutlined'
+  translation: 'Tantric Figures Outlined'
+
+- id: 'AnimalFigures'
+  translation: 'Animal Figures'
+
+- id: 'OldWoodblockPrints'
+  translation: 'Old Woodblock Prints'
+
+- id: 'TenzinGyatsoEenWonderlijkLeven'
+  translation: 'Tenzin Gyatso, Een Wonderlijk Leven'
+
+- id: 'DalaiLamainSwitzerland2009'
+  translation: 'Dalai Lama in Switzerland 2009'
+
+- id: 'China'
+  translation: 'China'
+
+- id: 'PorseleinJingdezhenPorcelain'
+  translation: 'Porselein Jingdezhen Porcelain'
+
+- id: 'OldPhotographs'
+  translation: 'Old Photographs'
+
+- id: 'CitiesHutongs'
+  translation: 'Cities, Hutongs, etc'
+
+- id: 'ImperialJade'
+  translation: 'Imperial Jade'
+
+- id: 'OldChinesePanelMadeofWood'
+  translation: 'Old Chinese Panel Made of Wood'
+
+- id: 'OldChinesePanelMadeofWood1'
+  translation: 'Old Chinese Panel Made of Wood-1'
+
+- id: 'Blog'
+  translation: 'Blog'
+
+- id: 'Dutch'
+  translation: 'Dutch'
+
+- id: 'English'
+  translation: 'English'
+
+- id: 'Mixed'
+  translation: 'Mixed'
+
+- id: 'PhallusFestivalJapan'
+  translation: 'Phallus Festival, Japan'
+
+- id: 'FotosVerzamelenCollecting'
+  translation: 'Fotos Verzamelen / Collecting'
+
+- id: 'OldDehliNightMarket'
+  translation: 'Old Dehli Night Market'
+
+- id: 'Food'
+  translation: 'Food'
+
+- id: 'Hippo'
+  translation: 'Hippo'
+
+- id: 'TheButanProject'
+  translation: 'The Butan Project'
+
+- id: 'BuddhistFuneralRites'
+  translation: 'Buddhist Funeral Rites'
+
+- id: 'OrangMaluAliasYogiMan'
+  translation: 'Orang Malu Alias Yogi Man'
+
+- id: 'RestauratieReparatieStenenslijpen'
+  translation: 'Restauratie / Reparatie / Stenenslijpen'
+
+#HeroSlider
+- id: 'Sunday'
+  translation: 'Sunday'
+
+- id: 'March'
+  translation: 'March'
+
+- id: 'Closed'
+  translation: 'Closed'
+
+- id: 'Address'
+  translation: 'Address'
+
+- id: 'OpeningHours'
+  translation: 'Opening Hours'
+
+- id: 'LocationHours'
+  translation: 'Location & Hours'
+
+- id: 'Owners'
+  translation: 'Owners'
+
+#AboutUs
+- id: 'AboutUs'
+  translation: 'About Us'
+
+- id: 'AboutPara1'
+  translation: 'Kashba started in the early sixties, when the very first Afghan coats were brought back to Amsterdam.'
+
+- id: 'AboutPara2'
+  translation: 'We have been travelling extensively ever since, selecting our own import from countries all over Asia, mainly India, Nepal, Tibet and China.'
+
+- id: 'AboutPara3'
+  translation: 'Our main criteria are quality and authencity, regardless of age.'
+
+- id: 'AboutPara4'
+  translation: 'With this website we offer an impression of our collection and history.'
+
+- id: 'AboutPara5'
+  translation: 'Looking at a beautiful piece of artwork, one wonders how and where it was made. From the very beginning we took photographs, many of which you may find here. The more you know, the more you see.'
+
+- id: 'AboutPara6'
+  translation: 'Come and visit us or email us if you have any questions. Over the years we have learned not to sell through the website. Sorry, there are too many time-consuming nuisances and imbeciles in the world.'
+
+- id: 'AboutPara7'
+  translation: 'Of course, a general introductory email remains a possibility. But we will only respond if you introduce yourself properly and if we are convinced that you are really interested.'
+
