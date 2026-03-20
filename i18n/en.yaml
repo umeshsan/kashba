@@ -328,3 +328,12 @@
 - id: 'AboutPara7'
   translation: 'Of course, a general introductory email remains a possibility. But we will only respond if you introduce yourself properly and if we are convinced that you are really interested.'
 
+#Books
+- id: 'Books'
+  translation: 'Books'
+
+- id: 'NepalValley'
+  translation: 'Nepal Valley<br>स्व निग:'
+
+- id: 'NepalValleyBreadcrumb'
+  translation: 'Nepal Valley - स्व निग:'

@@ -218,6 +218,30 @@
                 href="//localhost:1313/nl/store/musical-instruments/"
                 />
   </url><url>
+    <loc>//localhost:1313/nl/books/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/books/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="//localhost:1313/nl/books/"
+                />
+  </url><url>
+    <loc>//localhost:1313/nl/books/books/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/books/books/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="//localhost:1313/nl/books/books/"
+                />
+  </url><url>
     <loc>//localhost:1313/nl/store/earrings-rings-beads/</loc>
     <xhtml:link
                 rel="alternate"

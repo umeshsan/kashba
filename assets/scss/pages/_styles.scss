@@ -168,7 +168,7 @@ section {
         }
 
         li.active {
-            color: #d5a918;
+            color: $gold;
         }
     }
 }
@@ -191,7 +191,7 @@ section {
 .sticky-book {
     position: fixed;
     top: 25%;
-    right: -50px;
+    right: -40px;
     z-index: 9999;
     transition: all ease 0.3s;
 
@@ -204,5 +204,29 @@ section {
 
     &:hover {
         right: 0;
+    }
+}
+
+.nepal-valley-page {
+    .menu-hero {
+        background: #ee2201;
+    }
+
+    .images-group {
+        overflow: hidden;
+        clear: both;
+        text-align: center;
+
+        figure {
+            margin-bottom: 3rem;
+
+            img {
+                box-shadow: $box-shadow;
+            }
+        }
+    }
+
+    .video-wrapper {
+        max-width: 600px;
     }
 }

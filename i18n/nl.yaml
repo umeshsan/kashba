@@ -328,3 +328,12 @@
 - id: 'AboutPara7'
   translation: 'Natuurlijk blijft een algemene, introductieve e-mail mogelijk. Maar wij zullen alleen reageren als u zich correct voorstelt en als wij ervan overtuigd zijn dat u werkelijk geïnteresseerd bent.'
 
+#Books
+- id: 'Books'
+  translation: 'Boeken'
+
+- id: 'NepalValley'
+  translation: 'Nepalese Vallei<br>स्व निग:'
+
+- id: 'NepalValleyBreadcrumb'
+  translation: 'Nepalese Vallei - स्व निग:'

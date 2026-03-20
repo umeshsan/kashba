@@ -32,4 +32,18 @@
         font-size: 15px;
         margin-bottom: 0;
     }
+
+    figure {
+        position: relative;
+
+        i.bi-play-circle {
+            position: absolute;
+            left: 0;
+            right: 0;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }

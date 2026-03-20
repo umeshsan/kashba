@@ -218,6 +218,30 @@
                 href="//localhost:1313/en/store/necklaces/"
                 />
   </url><url>
+    <loc>//localhost:1313/en/books/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="//localhost:1313/nl/books/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/books/"
+                />
+  </url><url>
+    <loc>//localhost:1313/en/books/books/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="//localhost:1313/nl/books/books/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/books/books/"
+                />
+  </url><url>
     <loc>//localhost:1313/en/store/ornamental-jewelry/</loc>
     <xhtml:link
                 rel="alternate"
