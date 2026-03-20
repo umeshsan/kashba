@@ -1,7 +1,7 @@
 baseURL = "https://umeshsan.github.io/kashba/"
 title = 'Kashba'
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 enableInlineShortcodes = true
 disableFastRender = false
 relativeURLs = true
