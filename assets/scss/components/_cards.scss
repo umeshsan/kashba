@@ -31,6 +31,10 @@
     .product-title {
         font-size: 15px;
         margin-bottom: 0;
+
+        @include respond-to(sm) {
+            text-align: justify;
+        }
     }
 
     figure {

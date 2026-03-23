@@ -23,7 +23,7 @@ body {
     border-radius: 50%;
     position: fixed;
     right: 25px;
-    bottom: 60px;
+    bottom: 40px;
     z-index: 5;
     opacity: 0;
     display: flex;
@@ -118,6 +118,10 @@ main {
 
 section {
     padding-block: 100px;
+
+    @include respond-to(sm) {
+        padding-block: 60px;
+    }
 }
 
 /* Menu hero Banner */
@@ -129,6 +133,10 @@ section {
     justify-content: center;
     text-align: center;
     position: relative;
+
+    @include respond-to(sm) {
+        height: 320px;
+    }
 }
 
 .menu-hero::before {
@@ -143,6 +151,10 @@ section {
     color: #d4af37;
     font-weight: 700;
     position: relative;
+
+    @include respond-to(sm) {
+        font-size: 32px;
+    }
 }
 
 .menu-hero p {
@@ -185,6 +197,10 @@ section {
     figure {
         max-width: 40%;
         width: 100%;
+
+        @include respond-to(sm) {
+            max-width: 100%;
+        }
     }
 
     .info-wrap {
@@ -194,10 +210,15 @@ section {
 
 .sticky-book {
     position: fixed;
-    top: 25%;
+    top: 20%;
     right: -50px;
     z-index: 9999;
     transition: all ease 0.3s;
+
+    @include respond-to(sm) {
+        top: 50%;
+        right: -60px;
+    }
 
     img {
         box-shadow: var(--bs-box-shadow) !important;
