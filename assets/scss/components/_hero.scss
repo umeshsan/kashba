@@ -64,7 +64,7 @@
     @include respond-to(sm) {
         bottom: 0;
         padding-bottom: 3.5rem !important;
-        width: 100%;
+        max-width: 100%;
 
         hr {
             margin-block: 0.5rem;
