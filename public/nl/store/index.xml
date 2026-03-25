@@ -2,163 +2,163 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Winkel on Kashba</title>
-    <link>//localhost:16191/nl/store/</link>
+    <link>//localhost:1313/nl/store/</link>
     <description>Recent content in Winkel on Kashba</description>
     <generator>Hugo</generator>
     <language>nl</language>
-    <atom:link href="//localhost:16191/nl/store/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/nl/store/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acht Guru Rinpoche</title>
-      <link>//localhost:16191/nl/store/eight-guru-rinpoche/</link>
+      <link>//localhost:1313/nl/store/eight-guru-rinpoche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/eight-guru-rinpoche/</guid>
+      <guid>//localhost:1313/nl/store/eight-guru-rinpoche/</guid>
       <description></description>
     </item>
     <item>
       <title>Armbanden</title>
-      <link>//localhost:16191/nl/store/bracelets-silver/</link>
+      <link>//localhost:1313/nl/store/bracelets-silver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/bracelets-silver/</guid>
+      <guid>//localhost:1313/nl/store/bracelets-silver/</guid>
       <description></description>
     </item>
     <item>
       <title>Avalokiteshvara Chinrezig</title>
-      <link>//localhost:16191/nl/store/avalokiteshvara-chinrezig/</link>
+      <link>//localhost:1313/nl/store/avalokiteshvara-chinrezig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/avalokiteshvara-chinrezig/</guid>
+      <guid>//localhost:1313/nl/store/avalokiteshvara-chinrezig/</guid>
       <description></description>
     </item>
     <item>
       <title>Boeddhabeelden</title>
-      <link>//localhost:16191/nl/store/statues/</link>
+      <link>//localhost:1313/nl/store/statues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/statues/</guid>
+      <guid>//localhost:1313/nl/store/statues/</guid>
       <description></description>
     </item>
     <item>
       <title>Boeddhistische Thangka’s / Rollen</title>
-      <link>//localhost:16191/nl/store/buddhist-thankas-scrolls/</link>
+      <link>//localhost:1313/nl/store/buddhist-thankas-scrolls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/buddhist-thankas-scrolls/</guid>
+      <guid>//localhost:1313/nl/store/buddhist-thankas-scrolls/</guid>
       <description></description>
     </item>
     <item>
       <title>Chinees Porselein / Penselen / Bronzen</title>
-      <link>//localhost:16191/nl/store/chinese-porcelainbrushesbronzes/</link>
+      <link>//localhost:1313/nl/store/chinese-porcelainbrushesbronzes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/chinese-porcelainbrushesbronzes/</guid>
+      <guid>//localhost:1313/nl/store/chinese-porcelainbrushesbronzes/</guid>
       <description></description>
     </item>
     <item>
       <title>De Lockdown Blues</title>
-      <link>//localhost:16191/nl/store/the-lockdown-blues/</link>
+      <link>//localhost:1313/nl/store/the-lockdown-blues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/the-lockdown-blues/</guid>
+      <guid>//localhost:1313/nl/store/the-lockdown-blues/</guid>
       <description></description>
     </item>
     <item>
       <title>Diversen</title>
-      <link>//localhost:16191/nl/store/miscellaneous/</link>
+      <link>//localhost:1313/nl/store/miscellaneous/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/miscellaneous/</guid>
+      <guid>//localhost:1313/nl/store/miscellaneous/</guid>
       <description></description>
     </item>
     <item>
       <title>Halskettingen</title>
-      <link>//localhost:16191/nl/store/necklaces/</link>
+      <link>//localhost:1313/nl/store/necklaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/necklaces/</guid>
+      <guid>//localhost:1313/nl/store/necklaces/</guid>
       <description></description>
     </item>
     <item>
       <title>Hangers / Hangers (Pendants)</title>
-      <link>//localhost:16191/nl/store/pendants-hangers/</link>
+      <link>//localhost:1313/nl/store/pendants-hangers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/pendants-hangers/</guid>
+      <guid>//localhost:1313/nl/store/pendants-hangers/</guid>
       <description></description>
     </item>
     <item>
       <title>Hindoeïstische Beelden</title>
-      <link>//localhost:16191/nl/store/hindue-statues-beelden/</link>
+      <link>//localhost:1313/nl/store/hindue-statues-beelden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/hindue-statues-beelden/</guid>
+      <guid>//localhost:1313/nl/store/hindue-statues-beelden/</guid>
       <description></description>
     </item>
     <item>
       <title>Kashba Winkelinterieur</title>
-      <link>//localhost:16191/nl/store/kashba-shop-interior/</link>
+      <link>//localhost:1313/nl/store/kashba-shop-interior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/kashba-shop-interior/</guid>
+      <guid>//localhost:1313/nl/store/kashba-shop-interior/</guid>
       <description></description>
     </item>
     <item>
       <title>Maskers</title>
-      <link>//localhost:16191/nl/store/masks/</link>
+      <link>//localhost:1313/nl/store/masks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/masks/</guid>
+      <guid>//localhost:1313/nl/store/masks/</guid>
       <description></description>
     </item>
     <item>
       <title>Muziekinstrumenten</title>
-      <link>//localhost:16191/nl/store/musical-instruments/</link>
+      <link>//localhost:1313/nl/store/musical-instruments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/musical-instruments/</guid>
+      <guid>//localhost:1313/nl/store/musical-instruments/</guid>
       <description></description>
     </item>
     <item>
       <title>Oorbellen, Ringen en Kralen</title>
-      <link>//localhost:16191/nl/store/earrings-rings-beads/</link>
+      <link>//localhost:1313/nl/store/earrings-rings-beads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/earrings-rings-beads/</guid>
+      <guid>//localhost:1313/nl/store/earrings-rings-beads/</guid>
       <description></description>
     </item>
     <item>
       <title>Ornamenten</title>
-      <link>//localhost:16191/nl/store/ornaments/</link>
+      <link>//localhost:1313/nl/store/ornaments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/ornaments/</guid>
+      <guid>//localhost:1313/nl/store/ornaments/</guid>
       <description></description>
     </item>
     <item>
       <title>Rituele Objecten</title>
-      <link>//localhost:16191/nl/store/ritual-objects/</link>
+      <link>//localhost:1313/nl/store/ritual-objects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/ritual-objects/</guid>
+      <guid>//localhost:1313/nl/store/ritual-objects/</guid>
       <description></description>
     </item>
     <item>
       <title>Sieraden</title>
-      <link>//localhost:16191/nl/store/ornamental-jewelry/</link>
+      <link>//localhost:1313/nl/store/ornamental-jewelry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/ornamental-jewelry/</guid>
+      <guid>//localhost:1313/nl/store/ornamental-jewelry/</guid>
       <description></description>
     </item>
     <item>
       <title>Sjamanistisch, Naga, enz.</title>
-      <link>//localhost:16191/nl/store/shamanisticnagaetc/</link>
+      <link>//localhost:1313/nl/store/shamanisticnagaetc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/shamanisticnagaetc/</guid>
+      <guid>//localhost:1313/nl/store/shamanisticnagaetc/</guid>
       <description></description>
     </item>
     <item>
       <title>Tibetaanse Panelen / Chinees Meubilair</title>
-      <link>//localhost:16191/nl/store/tibetan-panels-chinese-furniture/</link>
+      <link>//localhost:1313/nl/store/tibetan-panels-chinese-furniture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/tibetan-panels-chinese-furniture/</guid>
+      <guid>//localhost:1313/nl/store/tibetan-panels-chinese-furniture/</guid>
       <description></description>
     </item>
     <item>
       <title>Toornige Goden</title>
-      <link>//localhost:16191/nl/store/wrathful-gods--toornige-goden/</link>
+      <link>//localhost:1313/nl/store/wrathful-gods--toornige-goden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/wrathful-gods--toornige-goden/</guid>
+      <guid>//localhost:1313/nl/store/wrathful-gods--toornige-goden/</guid>
       <description></description>
     </item>
     <item>
       <title>Vajrapani</title>
-      <link>//localhost:16191/nl/store/vajrapani/</link>
+      <link>//localhost:1313/nl/store/vajrapani/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:16191/nl/store/vajrapani/</guid>
+      <guid>//localhost:1313/nl/store/vajrapani/</guid>
       <description></description>
     </item>
   </channel>
